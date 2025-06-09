@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #111;
+  color: #eee;
+  line-height: 1.6;
+}
+
+header {
+  background: #e62b1e;
+  color: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.date {
+  font-size: 1rem;
+  opacity: 0.9;
+  margin-top: 0.5rem;
+}
+
+section {
+  padding: 2rem 1.5rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+h2 {
+  color: #e62b1e;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+p {
+  margin-bottom: 1.2rem;
+}
+
+.perks table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: #222;
+}
+
+.perks th,
+.perks td {
+  padding: 1rem;
+  border: 1px solid #444;
+  text-align: center;
+}
+
+.perks th {
+  background-color: #e62b1e;
+  color: #111;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #1a1a1a;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+.speakers {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+  background: linear-gradient(135deg, #111, #1a1a1a);
+}
+
+.speakers h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.tedx {
+  color: #e62b1e;
+  font-weight: bold;
+}
+
+.tedx sup {
+  font-size: 0.6em;
+  vertical-align: super;
+}
+
+.year {
+  color: #ff0055;
+  font-weight: bold;
+}
+
+.speaker {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+  border: 2px solid #e62b1e;
+  background: #121212;
+  border-radius: 8px;
+}
+
+.speaker-img {
+  background-color: #333;
+  background-size: contain;
+  border: 2px solid #e62b1e;
+  border-radius: 4px;
+}
+.sourav{
+    background-image: url("sourav.jpg");
+    background-size:cover;
+    background-position: center;
+    width: 100rem;
+    height: 20rem;
+}
+.sagar-tej{
+    background-image: url("sagar.jpg");
+    background-size:cover;
+    background-position: center;
+    width: 100rem;
+    height: 20rem;
+}
+.ravi-kannan{
+    background-image: url("Dr.Ravi\ kanan.jpg");
+    background-size:cover;
+    background-position: center;
+    width: 120rem;
+    height: 20rem;
+}
+.ib-ubhadiya{
+    background-image: url("");
+    background-size:cover;
+    background-position: center;
+    width: 100rem;
+    height: 20rem;
+}
+.vijender{
+    background-image: url("Dr.\ vijendra\ chavan.jpg");
+    background-size:cover;
+    background-position: center;
+    width: 100rem;
+    height: 20rem;
+}
+
+.speaker-info h2 {
+  margin: 0 0 0.5rem 0;
+  color: #ffffff;
+}
+
+.position {
+  color: #ff4444;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.bio {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #cccccc;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .speaker {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .speaker-img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .speaker-info {
+    text-align: center;
+  }
+}
+
+.team-section {
+  max-width: 850px;
+  margin: auto;
+  padding: 2rem;
+  background: linear-gradient(135deg, #111, #1a1a1a);
+}
+
+.team-section h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.tedx {
+  color: #e62b1e;
+  font-weight: bold;
+}
+
+.tedx sup {
+  font-size: 0.6em;
+  vertical-align: super;
+}
+
+.year {
+  color: #ff0055;
+  font-weight: bold;
+}
+
+.team-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.intro {
+  color: #fff;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.role {
+  margin-bottom: 1.5rem;
+  border-left: 4px solid #e62b1e;
+  padding-left: 1rem;
+}
+
+.role h3 {
+  color: #e62b1e;
+  margin-bottom: 0.3rem;
+}
+
+.role p {
+  color: #ddd;
+  margin: 0;
+}
+
+.contact {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #444;
+}
+
+.contact h2 {
+  color: #ff4444;
+  margin-bottom: 0.5rem;
+}
+
+.contact p {
+  margin: 0.3rem 0;
+  color: #ccc;
+}
+
+.contact a {
+  color: #e62b1e;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+.social {
+  margin-top: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
