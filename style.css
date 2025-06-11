@@ -5,10 +5,10 @@
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: #111;
-  color: #eee;
-  line-height: 1.6;
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 header {
@@ -35,9 +35,15 @@ header h1 {
 }
 
 section {
+      background: radial-gradient(circle at left, #1a1a1a, #000);
+
   padding: 2rem 1.5rem;
   max-width: 800px;
-  margin: auto;
+  margin: 0 auto 5rem 10rem;
+}
+.about-aus{
+      background: radial-gradient(circle at left, #1a1a1a, #000);
+
 }
 
 h2 {
@@ -77,14 +83,17 @@ footer {
   font-size: 0.9rem;
 }
 .speakers {
-  max-width: 900px;
-  margin: auto;
-  padding: 2rem;
-  background: linear-gradient(135deg, #111, #1a1a1a);
+  max-width: 1200px;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .speakers h1 {
+  width: 1000px;
   text-align: center;
+  max-width: 1200px;
   font-size: 2rem;
   color: white;
   margin-bottom: 2rem;
@@ -115,46 +124,55 @@ footer {
   border-radius: 8px;
 }
 
-.speaker-img {
-  background-color: #333;
-  background-size: contain;
-  border: 2px solid #e62b1e;
-  border-radius: 4px;
-}
 .sourav{
     background-image: url("sourav.jpg");
+    filter: grayscale();
+    --webkit-filter: grayscale(100%);
+    --webkit-blend-mode: multiply;
     background-size:cover;
     background-position: center;
-    width: 100rem;
-    height: 20rem;
+    width: 100%;
+    height: 50rem;
 }
 .sagar-tej{
     background-image: url("sagar.jpg");
     background-size:cover;
+    filter: grayscale();
+    --webkit-filter: grayscale(100%);
+    --webkit-blend-mode: multiply;
     background-position: center;
-    width: 100rem;
-    height: 20rem;
+    width: 100%;
+    height: 50rem;
 }
 .ravi-kannan{
     background-image: url("Dr.Ravi\ kanan.jpg");
     background-size:cover;
+    filter: grayscale();
+    --webkit-filter: grayscale(100%);
+    --webkit-blend-mode: multiply;
     background-position: center;
-    width: 120rem;
-    height: 20rem;
+    width: 100%;
+    height: 50rem;
 }
 .ib-ubhadiya{
     background-image: url("");
     background-size:cover;
+    filter: grayscale();
+    --webkit-filter: grayscale(100%);
+    --webkit-blend-mode: multiply;
     background-position: center;
-    width: 100rem;
-    height: 20rem;
+    width: 100%;
+    height: 50rem;
 }
 .vijender{
     background-image: url("Dr.\ vijendra\ chavan.jpg");
     background-size:cover;
+    filter: grayscale();
+    --webkit-filter: grayscale(100%);
+    --webkit-blend-mode: multiply;
     background-position: center;
-    width: 100rem;
-    height: 20rem;
+   width: 100%;
+    height: 50rem;
 }
 
 .speaker-info h2 {
@@ -168,11 +186,7 @@ footer {
   margin-bottom: 1rem;
 }
 
-.bio {
-  font-size: 0.95rem;
-  line-height: 1.5;
-  color: #cccccc;
-}
+
 
 /* Responsive layout */
 @media (max-width: 768px) {
@@ -190,12 +204,90 @@ footer {
     text-align: center;
   }
 }
+/* flip card */
+
+.flip-card {
+  background-color: transparent;
+  width: 324px;
+  height: 354px;
+  perspective: 1000px;
+  font-family: sans-serif;
+  margin:  0 0 2.5rem 2.9rem;
+}
+
+.title {
+  font-size: 0.8em;
+  font-weight: 900;
+  position: absolute;
+  top: 1.2rem;
+  margin: 0;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid #e62b1e;
+  border-radius: 1rem;
+
+}
+
+.flip-card-front {
+  color: #fff;
+
+  overflow: hidden;
+}
+
+.flip-card-back {
+  background: linear-gradient(120deg, rgb(231, 69, 69) 30%, #e62b1e 88%,
+     rgb(198, 64, 23) 40%, rgb(223, 57, 57) 78%);
+  color: white;
+  padding: 0 15px 0 15px;
+  transform: rotateY(180deg);
+}
+.bio {
+  font-size: 0.7rem;
+  line-height: 1.5;
+  position: absolute;
+  top: 6rem;
+  text-align: start;
+  color: #fff;
+}
+
+.flip-card-front p{
+  margin-bottom: 0;
+  font-size: large;
+  font-weight: 600;
+}
+
+
+
+
+
+
 
 .team-section {
-  max-width: 850px;
-  margin: auto;
-  padding: 2rem;
-  background: linear-gradient(135deg, #111, #1a1a1a);
+  max-width: 1200px;
+  padding: 1rem;
 }
 
 .team-section h1 {
@@ -229,7 +321,9 @@ footer {
 
 .intro {
   color: #fff;
-  margin-bottom: 2rem;
+    background: radial-gradient(circle at left, #1a1a1a, #000);
+
+  margin-top: 2rem;
   font-size: 1rem;
 }
 
@@ -278,6 +372,18 @@ footer {
   margin-top: 1rem;
 }
 
+/* scrool animation */
+
+.scroll-fade {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease-out, transform 0.6s ease-out;
+}
+
+.scroll-fade.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 
 
@@ -285,9 +391,84 @@ footer {
 
 
 
+.theme-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: radial-gradient(circle at left, #1a1a1a, #000);
+  padding: 4rem 3rem;
+  border-radius: 12px;
+  margin: 4rem auto;
+  max-width: 1200px;
+  gap: 3rem;
+}
+
+.theme-content {
+  flex: 1;
+}
+
+.theme-content h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1.4;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+
+
+.theme-content .red {
+  color: #e62b1e;
+}
+
+.theme-content p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #d0d0d0;
+  margin-bottom: 1.5rem;
+}
+
+.theme-image {
+  flex: 0.8;
+  text-align: center;
+}
+
+.theme-image .img {
+  width: 395px;
+  height: 419px;
+  max-width: 100%;
+  height: auto;
+  background-image: url("Logo.jpg");
+  background-size: cover;
+}
+
+.catalyst-title {
+  font-size: 2.5rem;
+  margin-top: 1.2rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.catalyst-subtitle {
+  font-size: 1rem;
+  color: #fff;
+  margin-top: 0.5rem;
+}
+
+.catalyst-subtitle .red {
+  color: #e62b1e;
+}
 
 
 
 
 
 
+@media ( (max-width: 425px)) {
+  section{
+    margin: auto;
+  }
+  .theme-image{
+    display: none;
+  }
+}
