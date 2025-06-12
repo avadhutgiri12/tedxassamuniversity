@@ -14,12 +14,24 @@ body {
   font-family: 'Segoe UI', sans-serif;
 }
 
-header {
-  background: #e62b1e;
-  color: #fff;
-  /* padding: 2rem 1rem; */
-  text-align: center;
+header .logotxt{
+  width: 100%;
+  height: 4.5rem;
+  text-align: start;
+  padding-left: 1rem;
 }
+.txt span{
+  font-size: 2rem;
+  font-weight: 800;
+  color: #e62b1e;
+}
+.txt{
+  font-size: 2rem;
+}
+.txt .x,.txt p{
+  font-size: 0.7rem;
+}
+
 a{
   text-decoration: none;
   color: white;
