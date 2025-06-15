@@ -103,7 +103,7 @@ header nav{
   color: #fff;
   position: absolute;
   right: 0.5rem;
-  top: 0.5em;
+  top: 4.2em;
   overflow: hidden;
   font-size: 14px;
   letter-spacing: 1px;
@@ -116,6 +116,13 @@ header nav{
   align-items: center;
   justify-content: center;
   border-radius: 3px;
+}
+
+@media(max-width:768px){
+  .buttons button{
+    right: 0.5rem;
+  top: 0.5em;
+  }
 }
 
 .buttons button:before, .buttons button:after {
