@@ -18,10 +18,15 @@
       </div>
     </div>
     <nav>
-      <a href="#" class="nav-anchor">Home</a>
-      <a href="#" class="nav-anchor">About</a>
-      <a href="teams.html" class="nav-anchor">Teams</a>
-      <a href="#contact" class="nav-anchor">Contact us</a>
+       <div class="hamburger" onclick="toggleMenu()">☰</div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#theme">Theme</a></li>
+    <li><a href="#speakers">Speakers</a></li>
+    <li><a href="teams.html">Team</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
       <div class="buttons">
         <button class="btn"><span></span>
           <p data-start="good luck!" data-text="Get Ticket" data-title="Register!"></p>
@@ -55,7 +60,7 @@
     </p>
   </section>
 
-  <section class="theme-container scroll-fade">
+  <section class="theme-container scroll-fade" id="theme">
     <div class="theme-content">
       <h2>VOICES FROM THE EAST : Resilience in the Face of Adversity</h2>
       <p>
@@ -97,7 +102,7 @@
 
 
 
-  <section class="speakers scroll-fade">
+  <section class="speakers scroll-fade" id="speakers">
     <h1>The Voices of <span class="tedx">TED<sup>x</sup></span> Assam University <span class="year">2025</span></h1>
 
     <div class="flip-card scroll-fade">
@@ -233,6 +238,43 @@
         </div>
       </div>
     </div>
+    <div class="flip-card scroll-fade">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <div class="kanisq"></div>
+          <p style="background-color: #e62b1e;">Kanisqa Agarwal</p>
+        </div>
+        <div class="flip-card-back">
+          <p class="title">Political Strategist | AI-GovTech Consultant | Narrative & Insight Specialist | GNLU Alum</p>
+          <p class="bio" style="top: 8rem;">Kanisqa Agarwal is a political strategist and communications advisor who helps leaders and organizations translate data into culture-driven campaigns. He has worked on five state elections and the last Lok Sabha elections, guiding senior leaders and brands on messaging, branding, and outreach. As a GovTech consultant, he develops AI-based solutions for governance and policy. A regular contributor to national dailies, he offers sharp insights into policy, tech, and narrative-building. He began his career as a competition lawyer at Khaitan & Co., after graduating from Gujarat National Law University.</p>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card scroll-fade">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <div class="pratha"></div>
+          <p style="background-color: #e62b1e;">Partha Pratim Saikia</p>
+        </div>
+        <div class="flip-card-back">
+          <p class="title">Assistant Professor | Management Scholar | Award-Winning Speaker</p>
+          <p class="bio" style="top: 8rem;">Partha Pratim Saikia is an Assistant Professor at ICFAI University, Tripura, and a UGC-NET qualified management scholar. A Gold Medalist in MBA and Silver Medalist in B.Tech, his research focuses on supply chain management in Assam’s tea gardens—earning Best Paper Awards at IBS Kolkata and Assam University. With over three years of industry experience and accolades like Best Speaker in an Inter-University Competition, he bridges academic rigor with practical and communication excellence</p>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card scroll-fade">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <div class="khushbu"></div>
+          <p style="background-color: #e62b1e;">Major Khushboo Patani</p>
+        </div>
+        <div class="flip-card-back">
+          <p class="title">Wellness Strategist | Ex-Army Officer | Mind-Body-Spirit Coach | TEDx Speaker</p>
+          <p class="bio" style="top: 8rem;">Khushboo Patani is a retired Indian Army Major turned wellness and mental health advocate. After over a decade of decorated military service, she now empowers individuals through psychological counseling, fitness coaching, and spiritual guidance. Her courageous rescue of an abandoned infant in Bareilly drew national attention, reflecting her deep commitment to service. A TEDx speaker and DIT Dehradun alum, she blends discipline, empathy, and holistic wisdom to inspire transformation and inner strength.</p>
+        </div>
+      </div>
+    </div>
+  
 
 
   </section>
@@ -270,7 +312,7 @@
 
       <div class="team-member">
         <img src="kuldeep.jpg" alt="ad mend" class="member-photo">
-        <h3>Ad Mend Research and Advertising Services</h3>
+        <h3>Ad Mendi Research and Advertising Services</h3>
         <p class="role-title">Design & Marketing Partner</p>
         <p class="member-bio">Visual identity, digital presence & branding strategy</p>
       </div>
@@ -299,7 +341,7 @@
 
       <div class="social">
         <p><strong>Follow us:</strong></p>
-        <p>Instagram | Facebook | X (Twitter): @TEDxAssamUniversity</p>
+        <p><a href="https://www.instagram.com/tedx.assamuniversity?utm_source=qr&igsh=eWkwZmh0ZGliemY1" target="_blank">Instagram</a> | <a href="">Facebook</a> | <a href=""> X (Twitter) </a> @TEDxAssamUniversity</p>
         <p>📍 Assam University, Silcoorie, Silchar – 788011</p>
         <p>🌐<a href="https://tedxassamuniversity.netlify.app/" target="_blank">www.tedxassamuniversity.netlify.app</a>
         </p>
@@ -307,7 +349,7 @@
     </div>
   </section>
 
-  <section class="gallery-section">
+  <section class="gallery-section" id="gallery">
     <h2>Campus Gallery</h2>
     <div class="gallery-grid">
       <img src="images/campus1.jpg" alt="Campus View 1">

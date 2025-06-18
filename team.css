@@ -153,3 +153,34 @@ section.intro, section.about-aus, section.theme-container {
         padding: 1.5rem;
     }
 }
+
+
+.contact {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #444;
+}
+
+.contact h2 {
+  color: #ff4444;
+  margin-bottom: 0.5rem;
+}
+
+.contact p {
+  margin: 0.3rem 0;
+  color: #ccc;
+}
+
+.contact a {
+  color: #e62b1e;
+  text-decoration: none;
+  margin: 0;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+.social {
+  margin-top: 1rem;
+}

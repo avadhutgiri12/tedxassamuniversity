@@ -11,3 +11,9 @@ entries.forEach(entry => {
 document.querySelectorAll('.scroll-fade').forEach(section => {
 observer.observe(section);
 });
+
+
+  function toggleMenu() {
+    const nav = document.getElementById('navLinks');
+    nav.classList.toggle('show');
+  }
