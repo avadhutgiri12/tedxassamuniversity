@@ -545,7 +545,7 @@ footer {
 
 .Arghadeep{
   background-image: url("Arghadeep\ Barua.jpg");
-  background-size: contain;
+  background-size: cover;
   filter: grayscale();
   --webkit-filter: grayscale(100%);
   --webkit-blend-mode: multiply;
@@ -996,4 +996,5 @@ footer {
     width: 277px;
     height: 288px;
   }
+
 }
