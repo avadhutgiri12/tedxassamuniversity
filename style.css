@@ -996,5 +996,8 @@ footer {
     width: 277px;
     height: 288px;
   }
+  .flip-card-back{
+    overflow: scroll;
+  }
 
 }
