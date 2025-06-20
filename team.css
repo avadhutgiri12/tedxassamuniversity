@@ -184,3 +184,13 @@ section.intro, section.about-aus, section.theme-container {
 .social {
   margin-top: 1rem;
 }
+
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #1a1a1a;
+  color: #ccc;
+  font-size: 0.9rem;
+  height: auto;
+}
