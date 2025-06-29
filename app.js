@@ -17,3 +17,27 @@ observer.observe(section);
     const nav = document.getElementById('navLinks');
     nav.classList.toggle('show');
   }
+
+
+  // crousel
+function scrollCarousel(direction) {
+    const carousel = document.getElementById('teamCarousel');
+    const scrollAmount = 270; // adjust per card width
+    carousel.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+  // end
+
+  // gallery crousel
+  function scrollGallery(direction) {
+    const carousel = document.getElementById('galleryCarousel');
+    const scrollAmount = 720;
+    carousel.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+
+  // end

@@ -118,9 +118,10 @@ header nav {
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
-  nav{
+  nav {
     margin-top: 2rem;
   }
+
   .nav-links {
     display: none;
     flex-direction: column;
@@ -481,7 +482,7 @@ footer {
 
 .ib-ubhadiya {
   background-image: url("ulabhadiya.jpg");
-  background-size:contain;
+  background-size: contain;
   filter: grayscale();
   --webkit-filter: grayscale(100%);
   --webkit-blend-mode: multiply;
@@ -512,7 +513,7 @@ footer {
   height: 50rem;
 }
 
-.kanisq{
+.kanisq {
   background-image: url("kanisq.jpg");
   background-size: cover;
   filter: grayscale();
@@ -522,7 +523,8 @@ footer {
   width: 100%;
   height: 50rem;
 }
-.pratha{
+
+.pratha {
   background-image: url("pratha.jpg");
   background-size: cover;
   filter: grayscale();
@@ -532,7 +534,8 @@ footer {
   width: 100%;
   height: 50rem;
 }
-.khushbu{
+
+.khushbu {
   background-image: url("khushbu.jpg");
   background-size: contain;
   filter: grayscale();
@@ -543,7 +546,7 @@ footer {
   height: 50rem;
 }
 
-.Arghadeep{
+.Arghadeep {
   background-image: url("Arghadeep\ Barua.jpg");
   background-size: cover;
   filter: grayscale();
@@ -554,7 +557,7 @@ footer {
   height: 50rem;
 }
 
-.sumit{
+.sumit {
   background-image: url("sumit.jpg");
   background-size: cover;
   filter: grayscale();
@@ -564,6 +567,40 @@ footer {
   width: 100%;
   height: 50rem;
 }
+
+.Nilima {
+  background-image: url("nilima\ roy.jpg");
+  background-size: cover;
+  filter: grayscale();
+  --webkit-filter: grayscale(100%);
+  --webkit-blend-mode: multiply;
+  background-position: center;
+  width: 100%;
+  height: 50rem;
+}
+
+.Akhinchan {
+  background-image: url("akhinchan\ sarkar.jpg");
+  background-size: cover;
+  filter: grayscale();
+  --webkit-filter: grayscale(100%);
+  --webkit-blend-mode: multiply;
+  background-position: center;
+  width: 100%;
+  height: 50rem;
+}
+
+.Saiyam {
+  background-image: url("sayamm\ muzumder.jpg");
+  background-size: cover;
+  filter: grayscale();
+  --webkit-filter: grayscale(100%);
+  --webkit-blend-mode: multiply;
+  background-position: center;
+  width: 100%;
+  height: 50rem;
+}
+
 
 .speaker-info h2 {
   margin: 0 0 0.5rem 0;
@@ -675,7 +712,68 @@ footer {
 
 
 
+/* crousel */
 
+.team-carousel-section {
+  padding: 3rem 2rem;
+  background-color: #0d0d0d;
+  color: white;
+  text-align: center;
+}
+
+.team-carousel-section h2 {
+  color: #e62b1e;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 1rem;
+}
+
+/* Carousel buttons */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #e62b1e;
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 10;
+  opacity: 0.8;
+  border-radius: 4px;
+}
+
+.carousel-btn:hover {
+  opacity: 1;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+/* Hide scroll bar for clean look */
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+/* crousel end */
 
 
 .team-section {
@@ -889,6 +987,7 @@ footer {
 }
 
 .team-member {
+  /* width: 28rem; */
   background: linear-gradient(120deg, rgb(231, 69, 69) 30%, #e62b1e 88%, rgb(198, 64, 23) 40%, rgb(223, 57, 57) 78%);
   border: 1px solid #e62b1e;
   border-radius: 12px;
@@ -915,7 +1014,7 @@ footer {
 
 .team-member h3 {
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-bottom: 0.5rem;
 }
 
@@ -951,7 +1050,7 @@ footer {
 
 /* gallery section */
 
-.gallery-section {
+/* .gallery-section {
   padding: 3rem 2rem;
   color: white;
   text-align: center;
@@ -1011,4 +1110,84 @@ footer {
     overflow: scroll;
   }
 
+} */
+
+/* gallery couresel */
+
+.gallery-carousel-section {
+  width: 100%;
+  padding: 3rem 2rem;
+  background-color: #0d0d0d;
+  color: white;
+  text-align: center;
+  /* margin: 0; */
 }
+
+.gallery-carousel-section h2 {
+  font-size: 2rem;
+  color: #e62b1e;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.crousel2 {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 1rem 0;
+}
+
+.crousel2 img {
+  width: 45rem;
+  height: 31rem;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #e62b1e;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.crousel2 img:hover {
+  transform: scale(1.05);
+}
+
+/* Buttons */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #e62b1e;
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 10;
+  opacity: 0.8;
+  border-radius: 4px;
+}
+
+.carousel-btn:hover {
+  opacity: 1;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+/* Hide scrollbar */
+.crousel2::-webkit-scrollbar {
+  display: none;
+}
+
+/* end */
